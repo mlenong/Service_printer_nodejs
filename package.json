@@ -1,0 +1,25 @@
+{
+  "name": "service-pdf-printer",
+  "version": "1.0.0",
+  "description": "rest api for print .pdf ONLY on windows",
+  "main": "index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "svc-install": "node src/svc-install.js",
+    "svc-uninstall": "node src/svc-uninstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aripkur",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "node-windows": "^1.0.0-beta.8",
+    "pdf-to-printer": "^5.6.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
